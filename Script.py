@@ -24,5 +24,3 @@ try:
   print(user["log"])
 except:
   print("Invalid login or password!")
-  
-print("Hello World!")
