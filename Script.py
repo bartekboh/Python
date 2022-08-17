@@ -1,16 +1,12 @@
 
 admin = {
   "pas":("admin", "admin"),
-  #"log": "admin",
-  #"pas": "admin",
   "access": "full",
   "name": "admin"
 }
 
 bartek = {
   "pas":("bartek123","bartek123"),
-  #"log": "bartek123",
-  #"pas": "bartek123",
   "access": "limited",
   "age": "17",
   "height": "184",
