@@ -1,11 +1,13 @@
 
 admin = {
+  #"pas":("admin", "admin")
   "log": "admin",
   "pas": "admin",
   "access": "full"
 }
 
 bartek = {
+  #"pas":("bartek123","bartek123")
   "log": "bartek123",
   "pas": "bartek123",
   "age": "17",
@@ -22,5 +24,6 @@ elif log == bartek["log"] and pas == bartek["pas"]:
 
 try:
   print(user["log"])
+  #print(user["pas"[0]])
 except:
   print("Invalid login or password!")
