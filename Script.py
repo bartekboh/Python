@@ -14,7 +14,7 @@ bartek = {
 def log_in():
   log = input("Login:")
   pas = input("Password:")
-  
+
   #passes_in = {"pas_in": (log,pas)}
 
   global user
@@ -23,7 +23,7 @@ def log_in():
     #user = admin
   #if bartek["pas"] == passes_in["pas_in"]:
     #user = bartek
-  
+
   if log == admin["pas"][0] and pas == admin["pas"][1]:
     user = admin
   elif log == bartek["pas"][0] and pas == bartek["pas"][1]:
