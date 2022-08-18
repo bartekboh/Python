@@ -14,10 +14,15 @@ bartek = {
 def log_in():
   log = input("Login:")
   pas = input("Password:")
+<<<<<<< HEAD
 
 
   passes_in = {"pas_in": (log,pas)}
+=======
+>>>>>>> Upgrades
 
+  passes_in = {"pas_in": (log,pas)}
+  
   global user
 
   if admin["pas"] == passes_in["pas_in"]:
