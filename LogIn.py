@@ -1,21 +1,26 @@
 import passes
-
 def log_in():
+
   log = input("Login:")
   pas = input("Password:")
 
-  passes_in = {"pas_in": (log, pas)}
 
   global user
+  global user_log
 
-  if passes.admin["pas"] == passes_in["pas_in"]:
-    user = "admin"
-    return user
-  if passes.bartek["pas"] == passes_in["pas_in"]:
-    user = "bartek"
-    return user
-  else:
+  if passes.admin.log == log and passes.admin.pas == pas:
+    user = passes.admin
+  if passes.bartek.log == log and passes.bartek.pas == pas:
+    user = passes.bartek
+
+  try:
+    print("Hello " + user.log)
+  except:
     print("Incorrect login or password!")
+
+
+
+
 
 
 

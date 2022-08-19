@@ -1,11 +1,4 @@
-admin = {
-  "pas": ("admin", "admin"),
-  "access": "full",
-  "username": "admin"
-}
+from acc import acc
 
-bartek = {
-  "pas": ("bartek123", "bartek123"),
-  "access": "limited",
-  "username": "Bartek"
-}
+admin = acc("admin", "admin", "full", True)
+bartek = acc("bartek123", "bartek123", "limited", False)
