@@ -1,4 +1,5 @@
 import passes
+global user
 def log_in():
 
   log = input("Login:")
@@ -12,6 +13,8 @@ def log_in():
     user = passes.admin
   if passes.bartek.log == log and passes.bartek.pas == pas:
     user = passes.bartek
+  # if passes.User3.log == log and passes.User3.pas == pas:
+  #   user = passes.User3
 
   try:
     print("Hello " + user.log)
